@@ -1,0 +1,77 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elexmedia</title>
+</head>
+<body>
+    <div class="employeeID">
+        <br>
+        <h2>Employee Loan Details</h2>
+        <form action="employeeID">
+
+            <label for="employeeID">Employee ID :</label> 
+            <input type="text" id="employeeID" name="employeeID" value=""><br><br>
+    
+            <label for="name">Name : </label>
+            <input type="text" id="name" name="name" value=""><br><br>
+    
+            <label for="address">Address : </label>
+            <input type="text" id="address" name="address" value=""><br><br>
+    
+            <label for="designation">Designation : </label>
+            <select name="designation" id="designation">
+                <option value="Manager">Manager</option>
+                <option value="Employee">Employee</option>
+            </select><br><br>
+    
+            <label for="loanAmount">Loan Amount($) : </label>
+            <input type="number" id="loanAmount" name="loanAmount" value=""><br><br>
+    
+            <label for="dateOfLoan">Date Of Loan : </label>
+            <input type="date" id="dateOfLoan" name="dateOfLoan" value=""><br><br>
+    
+            <button type="button" onclick="calculateLoan()">Calculate Loan</button>
+        </form>
+        <div id="result">
+            <p id="interest"></p>
+            <p id="totalPayable"></p>
+            <p id="maturityDate"></p>
+        </div>
+        <script src="Elexmedia.js"></script>
+    </div>
+</body>
+
+<style>
+    @media(min-width:280px){
+        .employeeID{
+        margin:auto;
+        width:100%;
+        height: 80vh;
+        text-align: center;
+        background:rgb(244, 175, 154);
+        border: 2px solid rgb(151, 148, 148);
+        border-radius: 5px;
+        font-size: 18px;
+    }
+    .employeeID input{
+        width: 8rem;
+        color: rgb(42, 1, 1);
+        font-size: 0.9rem;
+    }
+    button{
+        height: 4vh;
+        width:8rem;
+        font-size: 1rem;
+        color:white;
+        background-color: rgb(149, 70, 104);
+        border: rgb(65, 66, 62) solid 2px;
+    }
+    button:hover{
+        background-color: rgb(161, 65, 65);
+    }
+    }
+
+</style>
+</html>
